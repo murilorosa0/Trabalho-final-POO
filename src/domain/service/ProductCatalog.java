@@ -1,27 +1,29 @@
-package entitites;
+package domain.service;
+
+import domain.model.Product;
 
 import java.util.Map;
 
-public class CatalogoProdutos {
+public class ProductCatalog {
 
-    private Map<String, Produto> produtos;
+    private Map<String, Product> produtos;
 
-    public CatalogoProdutos() {
+    public ProductCatalog() {
     }
 
-    public CatalogoProdutos(Map<String, Produto> produtos) {
+    public ProductCatalog(Map<String, Product> produtos) {
         this.produtos = produtos;
     }
 
-    public Map<String, Produto> getProdutos() {
+    public Map<String, Product> getProdutos() {
         return produtos;
     }
 
-    public void setProdutos(Map<String, Produto> produtos) {
+    public void setProdutos(Map<String, Product> produtos) {
         this.produtos = produtos;
     }
 
-    public void addProduto(Produto produto) {
+    public void addProduto(Product produto) {
         this.produtos.put(produto.getCodigo().toUpperCase(), produto);
     }
 

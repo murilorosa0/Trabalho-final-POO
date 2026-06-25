@@ -1,21 +1,21 @@
-package entitites;
+package domain.model;
 
 import java.time.LocalDate;
 import java.util.List;
 
-public class FaturamentoDiario {
+public class DailyBilling {
 
     private LocalDate date;
     private Double totalFaturado;
-    private List<Pedido> pedidos;
+    private List<Order> orders;
 
-    public FaturamentoDiario() {
+    public DailyBilling() {
     }
 
-    public FaturamentoDiario(LocalDate date, Double totalFaturado, List<Pedido> pedidos) {
+    public DailyBilling(LocalDate date, Double totalFaturado, List<Order> orders) {
         this.date = date;
         this.totalFaturado = totalFaturado;
-        this.pedidos = pedidos;
+        this.orders = orders;
     }
 
     public LocalDate getDate() {
@@ -34,15 +34,15 @@ public class FaturamentoDiario {
         this.totalFaturado = totalFaturado;
     }
 
-    public List<Pedido> getPedidos() {
-        return pedidos;
+    public List<Order> getPedidos() {
+        return orders;
     }
 
-    public void setPedidos(List<Pedido> pedidos) {
-        this.pedidos = pedidos;
+    public void setPedidos(List<Order> orders) {
+        this.orders = orders;
     }
 
-    public void adicionarPedidoFaturado(Pedido pedido, double valorTotal) {
+    public void adicionarPedidoFaturado(Order order, double valorTotal) {
 
     }
 
