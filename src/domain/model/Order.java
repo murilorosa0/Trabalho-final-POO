@@ -1,14 +1,15 @@
-package entitites;
+package domain.model;
 
-public class Pedido {
+public class Order {
 
-    private String idPedido, codigoItem, estadoDestino;
+    private int idPedido;
+    private String codigoItem, estadoDestino;
     private Double quantidade, valorUnitario;
 
-    public Pedido() {
+    public Order() {
     }
 
-    public Pedido(String idPedido, String codigoItem, String estadoDestino, Double quantidade, Double valorUnitario) {
+    public Order(int idPedido, String codigoItem, String estadoDestino, Double quantidade, Double valorUnitario) {
         this.idPedido = idPedido;
         this.codigoItem = codigoItem;
         this.estadoDestino = estadoDestino;
@@ -16,11 +17,11 @@ public class Pedido {
         this.valorUnitario = valorUnitario;
     }
 
-    public String getIdPedido() {
+    public int getIdPedido() {
         return idPedido;
     }
 
-    public void setIdPedido(String idPedido) {
+    public void setIdPedido(int idPedido) {
         this.idPedido = idPedido;
     }
 

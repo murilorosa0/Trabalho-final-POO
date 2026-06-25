@@ -1,13 +1,13 @@
-package entitites;
+package domain.model;
 
-public class Produto {
+public class Product {
 
     private String codigo, descricao;
 
-    public Produto() {
+    public Product() {
     }
 
-    public Produto(String codigo, String descricao) {
+    public Product(String codigo, String descricao) {
         this.codigo = codigo;
         this.descricao = descricao;
     }
