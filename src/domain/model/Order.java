@@ -56,4 +56,9 @@ public class Order {
     public void setValorUnitario(Double valorUnitario) {
         this.valorUnitario = valorUnitario;
     }
+
+    @Override
+    public String toString(){
+        return "idPedido = " + idPedido + ", \ncodigoItem = " + codigoItem + ", \nquantidade = " + quantidade + ", \nvalorUnitario = " + valorUnitario + ", \nestadoDestino = " + estadoDestino;
+    }
 }
